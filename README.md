@@ -6,7 +6,7 @@ Extract project metadata from various files, such as `package.json`, `.env`, and
 
 To generate a web app manifest file you need data such as the following:
 
-```
+```json
 {
     "name": "My App",
     "description": "A short description of the project.",
