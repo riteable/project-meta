@@ -21,6 +21,9 @@
   "author": "Riteable",
   "license": "ISC",
   "dependencies": {
+    "camelcase-keys": "^2.1.0",
+    "dotenv": "^8.2.0",
+    "dotenv-expand": "^5.1.0",
     "sass-extract": "^2.1.0"
   },
   "devDependencies": {

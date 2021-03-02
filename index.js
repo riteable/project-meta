@@ -12,6 +12,18 @@ function camelize (input, transform = true) {
   return camelcaseKeys(input)
 }
 
+function normalizeSass (input) {
+  const normalized = {}
+
+  for (const key in input) {
+    if (key.indexOf('$') === 0) {
+      normalized[key.substr(1)] = input[key].value
+    }
+  }
+
+  return normalized
+}
+
 module.exports = (options = {}) => {
   const defaults = {
     package: process.cwd() + '/package.json',
@@ -42,6 +54,7 @@ module.exports = (options = {}) => {
       file: resolve(settings.sass)
     })
     output.sass = camelize(sass.vars.global, settings.camelize)
+    output.sass = normalizeSass(output.sass)
   }
 
   return output

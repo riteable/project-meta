@@ -44,14 +44,7 @@ module.exports = {
       name: meta.env.appName,
       short_name: meta.env.appName,
       description: meta.package.description,
-      background_color: meta.sass.$bodyColor.value.hex,
-      icons: [
-        {
-          src: path.resolve('resources/img/icon.png'),
-          sizes: [16, 24, 32, 64, 96, 128, 192, 256, 384, 512],
-          destination: path.join('img', 'icons')
-        }
-      ]
+      background_color: meta.sass.$bodyColor.value.hex
     })
   ]
   // ...
@@ -82,12 +75,9 @@ The following output is an example:
         appName: 'My App'
     },
     sass: {
-        '$bodyColor': {
-          type: 'SassColor',
-          value: { r:0, g:0, b:0, a:100, hex: '#000000' },
-        }
+        bodyColor: { r: 0, g: 0, b: 0, a: 1, hex: '#000000' }
     }
 }
 ```
 
-**NOTICE:** The module transforms the variables to camel-case by default. So, environment variables like `APP_NAME` will be turned into `appName`, and Sass variables such as `$body-color` will become `$bodyColor`.
+**NOTICE:** The module transforms the variables to camel-case by default. So, environment variables like `APP_NAME` will be turned into `appName`, and Sass variables such as `$body-color` will become `bodyColor`.
