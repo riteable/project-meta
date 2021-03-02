@@ -1,0 +1,29 @@
+{
+  "name": "@riteable/project-meta",
+  "version": "1.0.0",
+  "description": "Extract project metadata from various files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/riteable/project-meta"
+  },
+  "homepage": "https://github.com/riteable/project-meta",
+  "keywords": [
+    "meta",
+    "metadata",
+    "env",
+    "package",
+    "sass variables"
+  ],
+  "author": "Riteable",
+  "license": "ISC",
+  "dependencies": {
+    "sass-extract": "^2.1.0"
+  },
+  "devDependencies": {
+    "standard": "^16.0.3"
+  }
+}
