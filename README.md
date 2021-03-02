@@ -44,7 +44,7 @@ module.exports = {
       name: meta.env.appName,
       short_name: meta.env.appName,
       description: meta.package.description,
-      background_color: meta.sass.bodyColor
+      background_color: meta.sass.bodyColor.hex
     })
   ]
   // ...
