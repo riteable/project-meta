@@ -24,6 +24,7 @@
     "camelcase-keys": "^2.1.0",
     "dotenv": "^8.2.0",
     "dotenv-expand": "^5.1.0",
+    "node-sass": "^4.14.1",
     "sass-extract": "^2.1.0"
   },
   "devDependencies": {
