@@ -1,6 +1,6 @@
 {
   "name": "@riteable/project-meta",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Extract project metadata from various files.",
   "main": "index.js",
   "scripts": {
